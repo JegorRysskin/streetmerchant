@@ -17,9 +17,11 @@ import {AmazonNl} from './amazon-nl';
 import {AmazonSg} from './amazon-sg';
 import {AmazonUk} from './amazon-uk';
 import {Amd} from './amd';
+import {AmdBe} from './amd-be';
 import {AmdCa} from './amd-ca';
 import {AmdDe} from './amd-de';
 import {AmdIt} from './amd-it';
+import {AmdNl} from './amd-nl';
 import {AmdUk} from './amd-uk';
 import {AntOnline} from './antonline';
 import {AO} from './ao';
@@ -46,6 +48,7 @@ import {Comet} from './comet';
 import {ComputerAlliance} from './computeralliance';
 import {Computeruniverse} from './computeruniverse';
 import {Coolblue} from './coolblue';
+import {CoolblueBe} from './coolblue-be';
 import {Coolmod} from './coolmod';
 import {Corsair} from './corsair';
 import {CorsairUK} from './corsair-uk';
@@ -165,9 +168,11 @@ export const storeList = new Map([
   [AmazonSg.name, AmazonSg],
   [AmazonUk.name, AmazonUk],
   [Amd.name, Amd],
+  [AmdBe.name, AmdBe],
   [AmdCa.name, AmdCa],
   [AmdDe.name, AmdDe],
   [AmdIt.name, AmdIt],
+  [AmdNl.name, AmdNl],
   [AmdUk.name, AmdUk],
   [AntOnline.name, AntOnline],
   [AO.name, AO],
@@ -194,6 +199,7 @@ export const storeList = new Map([
   [ComputerAlliance.name, ComputerAlliance],
   [Computeruniverse.name, Computeruniverse],
   [Coolblue.name, Coolblue],
+  [CoolblueBe.name, CoolblueBe],
   [Coolmod.name, Coolmod],
   [Corsair.name, Corsair],
   [CorsairUK.name, CorsairUK],
