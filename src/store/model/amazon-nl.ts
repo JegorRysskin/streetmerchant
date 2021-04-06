@@ -42,6 +42,54 @@ export const AmazonNl: Store = {
       url: 'https://www.amazon.nl/dp/B085K45C3S',
     },
     {
+      brand: 'pny',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08HBJB7YD&Quantity.1=1',
+      model: 'xlr8 revel',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08HBJB7YD',
+    },
+    {
+      brand: 'asus',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08LLG9KQT&Quantity.1=1',
+      model: 'tuf oc',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08LLG9KQT',
+    },
+    {
+      brand: 'asus',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08KHFZN9P&Quantity.1=1',
+      model: 'dual oc',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08KHFZN9P',
+    },
+    {
+      brand: 'asus',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08KHHF881&Quantity.1=1',
+      model: 'strix oc',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08KHHF881',
+    },
+    {
+      brand: 'asus',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08LNPPCWJ&Quantity.1=1',
+      model: 'gaming x trio',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08LNPPCWJ',
+    },
+    {
+      brand: 'msi',
+      cartUrl:
+        'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08P37HYZM&Quantity.1=1',
+      model: 'suprim x',
+      series: '3070',
+      url: 'https://www.amazon.nl/dp/B08P37HYZM',
+    },
+    {
       brand: 'msi',
       cartUrl:
         'https://www.amazon.nl/gp/aws/cart/add.html?ASIN.1=B08HM4M621&Quantity.1=1',
