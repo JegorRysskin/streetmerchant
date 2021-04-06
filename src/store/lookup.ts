@@ -24,6 +24,7 @@ import open from 'open';
 import {processBackoffDelay} from './model/helpers/backoff';
 import {sendNotification} from '../notification';
 import useProxy from '@doridian/puppeteer-page-proxy';
+import arrayShuffle from 'array-shuffle';
 
 const inStock: Record<string, boolean> = {};
 
@@ -169,7 +170,8 @@ async function lookup(browser: Browser, store: Store) {
       }
     }
   }
-
+  
+  store.links = arrayShuffle(store.links);
   /* eslint-disable no-await-in-loop */
   for (const link of store.links) {
     if (!filterStoreLink(link)) {
