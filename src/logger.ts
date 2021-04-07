@@ -111,7 +111,7 @@ export const Print = {
     const productString = `${buildProductString(link, store)} :: IN STOCK`;
 
     if (color) {
-      return chalk.bgGreen.white.bold(`🚀🚨 ${productString} 🚨🚀`);
+      return chalk.bgGreen.white.bold(`🚀🚨 ${productString} ${link.price ?? ''} 🚨🚀`);
     }
 
     if (sms) {
@@ -186,11 +186,11 @@ export const Print = {
         '✖ ' +
         buildProductString(link, store, true) +
         ' :: ' +
-        chalk.red('OUT OF STOCK')
+        chalk.red(`OUT OF STOCK ${link.price ?? ''}`)
       );
     }
 
-    return `✖ ${buildProductString(link, store)} :: OUT OF STOCK`;
+    return `✖ ${buildProductString(link, store)} :: OUT OF STOCK ${link.price ?? ''}`;
   },
   productInStock(link: Link): string {
     let productString = `Product Page: ${link.url}`;
