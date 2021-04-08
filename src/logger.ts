@@ -186,11 +186,11 @@ export const Print = {
         '✖ ' +
         buildProductString(link, store, true) +
         ' :: ' +
-        chalk.red(`OUT OF STOCK ${link.price ?? ''}`)
+        chalk.red(`OUT OF STOCK`)
       );
     }
 
-    return `✖ ${buildProductString(link, store)} :: OUT OF STOCK ${link.price ?? ''}`;
+    return `✖ ${buildProductString(link, store)} :: OUT OF STOCK`;
   },
   productInStock(link: Link): string {
     let productString = `Product Page: ${link.url}`;
@@ -246,12 +246,12 @@ function buildProductString(link: Link, store: Store, color?: boolean): string {
       return (
         chalk.gray(`[${proxy}]`) +
         chalk.cyan(` [${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model}`)
+        chalk.grey(` [${link.brand} (${link.series})] ${link.model} ${link.price ?? ''}`)
       );
     } else {
       return (
         chalk.cyan(`[${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model}`)
+        chalk.grey(` [${link.brand} (${link.series})] ${link.model} ${link.price ?? ''}`)
       );
     }
   }
