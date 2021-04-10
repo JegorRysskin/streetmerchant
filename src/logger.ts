@@ -248,12 +248,12 @@ function buildProductString(link: Link, store: Store, color?: boolean): string {
       return (
         chalk.gray(`[${proxy}]`) +
         chalk.cyan(` [${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model} ${link.price ?? ''}`)
+        chalk.grey(` [${link.brand} (${link.series})] ${link.model}${link.price ?? ''}`)
       );
     } else {
       return (
         chalk.cyan(`[${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model} ${link.price ?? ''}`)
+        chalk.grey(` [${link.brand} (${link.series})] ${link.model}${link.price ?? ''}`)
       );
     }
   }
